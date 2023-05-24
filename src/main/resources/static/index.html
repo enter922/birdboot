@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的首页</title>
+</head>
+<body>
+    <!--
+        <h1-h6> 标题:标题独占一行
+        <center> 居中显示:该标签已经不建议使用(没有学习CSS前我们临时用)
+                         包含在该标签中间的内容都会在页面上居中显示出来
+
+        <input> 输入组件:用于获取用户在页面上输入的信息。输入组件有多种呈现形式，可以由type
+                        属性指定输入组件的样子
+                        常见的有:
+                        type="text"  文本输入框
+                        type="password" 密码输入框
+                        type="radio" 单选框
+                        type="checkbox" 多选框
+                        type="button" 按钮
+
+        <a> 超链接:a标签中的属性href用于指定超链接跳转的网页地址
+        <br> 换行
+        <table>标签:表格。属性border用于指定边框。
+                    <table>标签中包含<tr>标签用于表示行
+                    <tr>标签中包含<td>标签用于表示列
+                    <td>标签中常见属性:
+                    align:对其方式。left左对齐,right右对齐,center剧中对其
+                    colspan:跨列合并列，合并是从左向右合并列
+                    rowspan:跨行合并列，合并是从上向下合并列
+     -->
+    <center>
+        <!--<h1>百度</h1>-->
+        <!--
+            图片需要指定路径，当在页面上要定位本网站其它资源时(这里就是，在index.html页面上
+            要定位图片logo.png)，这里的路径通常从"/"开始。而浏览器在理解"/"的位置是这样的:
+            浏览器会首先根据请求当前页面的路径:
+            http://localhost:8080/index.html
+            来确定"/"的位置，而这个位置就是上述路径中抽象路径部分的第一个"/"的位置
+            因此src="/logo.png"时，浏览器实际请求的路径为:
+
+
+            在例如:
+            如果请求当前index.html页面时，请求路径为:
+            http://localhost:8080/myweb/index.html
+            那该页面上图片的src="/logo.png"
+            此时浏览器理解的图片实际路径为?
+            http://localhost:8080/logo.png
+
+         -->
+        <img src="/logo.png"><br>
+        <input type="text" size="32">
+        <input type="button" value="百度一下" onclick="alert('点你妹啊!')">
+        <br>
+        <a href="/classtable.html">课程表</a>
+        <a href="/reg.html">用户注册</a>
+        <a href="/login.html">用户注册</a>
+        <a href="http://www.taobao.com">淘宝</a>
+        <a href="/userList">动态</a>
+        <a href="/img">二维码</a>
+        <br>
+        <table border="1">
+            <tr>
+                <td>第1列</td>
+                <td>第2列</td>
+                <td colspan="2" align="center">第3列</td>
+            </tr>
+            <tr>
+                <td>第1列</td>
+                <td rowspan="2">第2列</td>
+                <td>第3列</td>
+                <td>第4列</td>
+            </tr>
+            <tr>
+                <td>第1列</td>
+
+                <td>第3列</td>
+                <td>第4列</td>
+            </tr>
+            <tr>
+                <td>第1列</td>
+                <td>第2列</td>
+                <td>第3列</td>
+                <td>第4列</td>
+            </tr>
+        </table>
+
+    </center>
+</body>
+</html>

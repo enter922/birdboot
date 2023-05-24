@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+</head>
+<style>
+    body{
+        background-image: url("wallhaven-579ky3.jpg");
+        background-size: 100%;
+    }
+    table{
+        background-color: rgba(39,222,252,0.4);
+    }
+    td{
+       height:40px;
+        width:150px;
+    }
+    input{
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+    }
+</style>
+<body>
+    <center>
+        <h1>用户注册</h1>
+            <form action="/regUser" method="get">
+                <table>
+                    <tr>
+                        <td>用户名</td>
+                        <!--
+                            注意!所有在form中的输入组件都必须用name属性定义名字，否则
+                            表单提交时该输入框的信息会被忽略！
+                         -->
+                        <td><input name="username" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>密码</td>
+                        <td><input name="password" type="password"></td>
+                    </tr>
+                    <tr>
+                        <td>昵称</td>
+                        <td><input name="nickname" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>年龄</td>
+                        <td><input name="age" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" value="注册">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+    </center>
+</body>
+</html>
