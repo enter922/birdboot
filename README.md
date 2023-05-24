@@ -1,0 +1,2 @@
+# birdboot
+基于Java面向对象及核心API，ServerSocket自己手动编写springBoot
